@@ -23,13 +23,12 @@ nav {
     &--link {
         display: block;
         text-decoration: none;
-        border-right: 2px solid #ccc;
+        @media screen and (min-width: 960px) {
+            border-right: 2px solid #ccc;
+        }
         color: #fff;
         padding: var(--p-menu);
         transition: all .5s;
-
-        &:first-of-type {}
-
 
         &:hover {
             background-color: #ccc;

@@ -18,6 +18,9 @@
   font-weight: normal;
   font-style: normal; }
 
+.br-none {
+  border-right: none !important; }
+
 body {
   background: url(../img/paven.png); }
 
@@ -70,10 +73,13 @@ nav {
 .menu--link {
   display: block;
   text-decoration: none;
-  border-right: 2px solid #ccc;
   color: #fff;
   padding: var(--p-menu);
   transition: all .5s; }
+
+@media screen and (min-width: 960px) {
+  .menu--link {
+    border-right: 2px solid #ccc; } }
 
 .menu--link:hover {
   background-color: #ccc; }
