@@ -1,5 +1,6 @@
 :root {
-  --color-logo: #71b053; }
+  --color-logo: #71b053;
+  --p-menu: 0.8em; }
 
 *,
 *::before,
@@ -20,13 +21,15 @@
 body {
   background: url(../img/paven.png); }
 
-.logo {
-  width: 770px;
-  margin: 0 auto; }
-  .logo img {
-    display: block;
-    margin: 0 auto;
-    width: 140px; }
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 770px;
+    margin: 0 auto; } }
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  width: 140px; }
 
 .main-title {
   text-align: center;
@@ -37,8 +40,40 @@ body {
   margin-top: 10px;
   text-shadow: 0 2px 1px #333;
   transition: all .5s; }
-  .main-title:hover {
-    text-shadow: 0 0 4px var(--color-logo); }
-  .main-title a {
-    text-decoration: none;
-    color: var(--color-logo); }
+
+.main-title:hover {
+  text-shadow: 0 0 4px var(--color-logo); }
+
+.main-title a {
+  text-decoration: none;
+  color: var(--color-logo); }
+
+nav {
+  margin-top: 2rem;
+  background-color: #333; }
+
+.menu {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif; }
+
+@media screen and (min-width: 960px) {
+  .menu {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1024px;
+    display: flex; } }
+
+.menu--item {
+  flex: auto;
+  text-align: center; }
+
+.menu--link {
+  display: block;
+  text-decoration: none;
+  border-right: 2px solid #ccc;
+  color: #fff;
+  padding: var(--p-menu);
+  transition: all .5s; }
+
+.menu--link:hover {
+  background-color: #ccc; }

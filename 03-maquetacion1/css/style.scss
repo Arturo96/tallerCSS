@@ -1,6 +1,4 @@
-:root {
-    --color-logo: #71b053;
-}
+@import "./modules/variables";
 
 *,
 *::before,
@@ -32,8 +30,11 @@ body {
 }
 
 .logo {
-    width: 770px;
-    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        
+        width: 770px;
+        margin: 0 auto;
+    }
 
     img {
         display: block;
@@ -61,3 +62,5 @@ body {
         color: var(--color-logo);
     }
 }
+
+@import "./modules/menu";
