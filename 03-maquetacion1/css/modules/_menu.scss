@@ -1,6 +1,7 @@
 nav {
     margin-top: 2rem;
     background-color: #333;
+    box-shadow: 0 0 3px gray;
 }
 
 .menu {
@@ -18,14 +19,21 @@ nav {
     &--item {
         flex: auto;
         text-align: center;
+
+        @media screen and (min-width: 960px) {
+            border-right: 1px solid #ccc;
+
+            &:first-child {
+                border-left: 1px solid #ccc;
+            }
+
+        }
     }
 
     &--link {
         display: block;
         text-decoration: none;
-        @media screen and (min-width: 960px) {
-            border-right: 2px solid #ccc;
-        }
+        
         color: #fff;
         padding: var(--p-menu);
         transition: all .5s;

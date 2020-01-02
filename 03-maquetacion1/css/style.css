@@ -53,7 +53,8 @@ body {
 
 nav {
   margin-top: 2rem;
-  background-color: #333; }
+  background-color: #333;
+  box-shadow: 0 0 3px gray; }
 
 .menu {
   list-style: none;
@@ -70,16 +71,18 @@ nav {
   flex: auto;
   text-align: center; }
 
+@media screen and (min-width: 960px) {
+  .menu--item {
+    border-right: 1px solid #ccc; }
+  .menu--item:first-child {
+    border-left: 1px solid #ccc; } }
+
 .menu--link {
   display: block;
   text-decoration: none;
   color: #fff;
   padding: var(--p-menu);
   transition: all .5s; }
-
-@media screen and (min-width: 960px) {
-  .menu--link {
-    border-right: 2px solid #ccc; } }
 
 .menu--link:hover {
   background-color: #ccc; }
