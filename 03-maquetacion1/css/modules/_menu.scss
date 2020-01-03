@@ -50,6 +50,8 @@ nav {
 	}
 }
 
+/* MENÚ DESPLEGABLE */
+
 .submenu {
 	background-color: var(--color-logo);
 	position: absolute;
@@ -68,6 +70,7 @@ nav {
 		text-decoration: none;
 		display: block;
 		color: #fff;
+		transition: all 0.5s;
 
 		&:hover {
 			background-color: #fff;
