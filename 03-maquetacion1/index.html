@@ -1,170 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Maquetación 1</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Maquetación 1</title>
-</head>
+	<body>
+		<header>
+			<!-- Logotipo -->
+			<div class="logo">
+				<img src="img/logo.png" alt="Logo" />
+				<h1 class="main-title"><a href="">Master en CSS</a></h1>
+			</div>
 
-<body>
-    <header>
-        <!-- Logotipo -->
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-            <h1 class="main-title"><a href="">Master en CSS</a></h1>
-        </div>
+			<!-- Menú de navegación -->
+			<nav>
+				<ul class="menu">
+					<li class="menu--item"><a href="" class="menu--link">Inicio</a></li>
+					<li class="menu--item"><a href="" class="menu--link">Contenido</a></li>
+					<li class="menu--item"><a href="" class="menu--link">Requerimientos</a></li>
+					<li class="menu--item"><a href="" class="menu--link br-none">Lenguajes</a></li>
+					<li class="menu--item">
+						<a href="" class="menu--link">Frameworks</a>
+						<ul class="submenu">
+							<li class="submenu--item"><a href="" class="submenu--link">Bootstrap</a></li>
+							<li class="submenu--item"><a href="" class="submenu--link">Foundation</a></li>
+							<li class="submenu--item"><a href="" class="submenu--link">Materialize</a></li>
+						</ul>
+					</li>
+					<li class="menu--item"><a href="" class="menu--link">Proyectos</a></li>
+					<li class="menu--item"><a href="" class="menu--link">El instructor</a></li>
+					<li class="menu--item"><a href="" class="menu--link">Reseñas</a></li>
+					<li class="menu--item"><a href="" class="menu--link">Blog</a></li>
+					<li class="menu--item"><a href="" class="menu--link">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
 
-        <!-- Menú de navegación -->
-        <nav>
-            <ul class="menu">
-                <li class="menu--item"><a href="" class="menu--link">Inicio</a></li>
-                <li class="menu--item"><a href="" class="menu--link">Contenido</a></li>
-                <li class="menu--item"><a href="" class="menu--link">Requerimientos</a></li>
-                <li class="menu--item"><a href="" class="menu--link br-none">Lenguajes</a></li>
-                <li class="menu--item"><a href="" class="menu--link">Frameworks</a>
-                    <ul class="submenu">
-                        <li class="submenu--item"><a href="" class="submenu--link">Bootstrap</a></li>
-                        <li class="submenu--item"><a href="" class="submenu--link">Foundation</a></li>
-                        <li class="submenu--item"><a href="" class="submenu--link">Materialize</a></li>
-                    </ul>
-                </li>
-                <li class="menu--item"><a href="" class="menu--link">Proyectos</a></li>
-                <li class="menu--item"><a href="" class="menu--link">El instructor</a></li>
-                <li class="menu--item"><a href="" class="menu--link">Reseñas</a></li>
-                <li class="menu--item"><a href="" class="menu--link">Blog</a></li>
-                <li class="menu--item"><a href="" class="menu--link">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+		<!-- Contenido ppal -->
+		<div class="container">
+			<!-- Inicio del Contenido ppal -->
+			<main>
+				<!-- Barra lateral -->
+				<aside>
+					<section class="widget login">
+						<h3 class="login-title">Entrar a la web</h3>
+						<form action="" class="form-login">
+							<label>
+								<span>Usuario:</span>
+								<input type="text" />
+							</label>
 
-    <!-- Contenido ppal -->
-    <div class="container">
-        <!-- Inicio del Contenido ppal -->
-        <main>
+							<label
+								><span>Contraseña:</span>
+								<input type="password" />
+							</label>
 
-            <!-- Barra lateral -->
-            <aside>
+							<input type="submit" value="Entrar" />
+						</form>
 
-                <section class="widget login">
-                    <h3 class="login-title">Entrar a la web</h3>
-                    <form action="" class="form-login">
-                        <label>
-                            Usuario:
-                            <input type="text">
-                        </label>
+						<a href="https://victorroblesweb.es">Zona de Alumnos</a>
+						<a href="#">Zona del Profesor</a>
+						<a href="#">Acceso a calificaciones</a>
+					</section>
 
-                        <label>Contraseña:
-                            <input type="password">
-                        </label>
+					<section class="widget aula">
+						<h3 class="aula-title">Aula virtual 1</h3>
+						<form action="" class="form-aula">
+							<label>
+								<span>Usuario:</span>
+								<input type="text" />
+							</label>
 
-                        <input type="submit" value="Entrar">
-                    </form>
+							<label
+								><span>Contraseña:</span>
+								<input type="password" />
+							</label>
 
-                    <a href="">Zona de Alumnos</a>
-                    <a href="">Zona del Profesor</a>
-                    <a href="">Acceso a calificaciones</a>
-                </section>
+							<input type="submit" value="Entrar" />
+						</form>
+					</section>
 
-                <section class="widget aula">
-                    <h3 class="aula-title">Aula virtual 1</h3>
-                    <form action="" class="form-aula">
-                        <label>
-                            Usuario:
-                            <input type="text">
-                        </label>
+					<section class="widget aula">
+						<h3 class="aula-title">Aula virtual 2</h3>
+						<form action="" class="form-aula">
+							<label>
+								<span>Usuario:</span>
+								<input type="text" />
+							</label>
 
-                        <label>Contraseña:
-                            <input type="password">
-                        </label>
+							<label
+								><span>Contraseña:</span>
+								<input type="password" />
+							</label>
 
-                        <input type="submit" value="Entrar">
-                    </form>
-                </section>
+							<input type="submit" value="Entrar" />
+						</form>
+					</section>
 
-                <section class="widget aula">
-                    <h3 class="aula-title">Aula virtual 2</h3>
-                    <form action="" class="form-aula">
-                        <label>
-                            Usuario:
-                            <input type="text">
-                        </label>
+					<section class="widget interes">
+						<h3>Enlaces de interés</h3>
+						<ul class="enlaces--interes">
+							<li class="enlaces--interes-item"><a href="#">Master en Javascript</a></li>
+							<li class="enlaces--interes-item"><a href="#">Master en PHP</a></li>
+							<li class="enlaces--interes-item"><a href="#">Master en Frameworks JS</a></li>
+							<li class="enlaces--interes-item"><a href="#">Master en webs full-stack</a></li>
+							<li class="enlaces--interes-item"><a href="#">victorroblesweb.es</a></li>
+						</ul>
+					</section>
 
-                        <label>Contraseña:
-                            <input type="password">
-                        </label>
+					<section class="widget frase">
+						<p>
+							<span>Frase del dia:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et facilis
+							vel ullam ut tenetur, quam repellendus atque, impedit aliquam tempora ?
+						</p>
+						<a href="#">Leer mas frases</a>
+					</section>
+				</aside>
+				<section class="news">
+					<section class="news--frontend">
+						<h2>Noticias de Frontend</h2>
+						<article class="entry">
+							<h4 class="entry--title">Título de la entrada</h4>
+							<p class="entry--content">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum nobis dolorem
+								iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut consectetur
+								nobis tempore dolores vitae quibusdam rerum.
+							</p>
+							<h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
+						</article>
 
-                        <input type="submit" value="Entrar">
-                    </form>
-                </section>
+						<article class="entry">
+							<h4 class="entry--title">Título de la entrada</h4>
+							<p class="entry--content">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum nobis dolorem
+								iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut consectetur
+								nobis tempore dolores vitae quibusdam rerum.
+							</p>
+							<h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
+						</article>
 
-                <section class="interes">
-                    <ul class="enlaces--interes">
-                        <li><a href="#">Master en Javascript</a></li>
-                        <li><a href="#">Master en PHP</a></li>
-                        <li><a href="#">Master en Frameworks JS</a></li>
-                        <li><a href="#">Master en webs full-stack</a></li>
-                        <li><a href="#">victorroblesweb.es</a></li>
-                    </ul>
-                </section>
+						<article class="entry">
+							<h4 class="entry--title">Título de la entrada</h4>
+							<p class="entry--content">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum nobis dolorem
+								iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut consectetur
+								nobis tempore dolores vitae quibusdam rerum.
+							</p>
+							<h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
+						</article>
+					</section>
+					<section class="news--backend">
+						<h2>Noticias de Backend</h2>
+						<article class="entry">
+							<h4 class="entry--title">Título de la entrada</h4>
+							<p class="entry--content">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum nobis dolorem
+								iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut consectetur
+								nobis tempore dolores vitae quibusdam rerum.
+							</p>
+							<h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
+						</article>
+					</section>
+					<a href="">Ver histórico de noticias</a>
+				</section>
+			</main>
+		</div>
 
-                <div class="frase">
-                    <p></p>
-                    <a href="">Leer mas frases</a>
-                </div>
-
-            </aside>
-            <section class="news">
-                <section class="news--frontend">
-                    <h2>Noticias de Frontend</h2>
-                    <article class="entry">
-                        <h4 class="entry--title">Título de la entrada</h4>
-                        <p class="entry--content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum
-                            nobis dolorem iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut
-                            consectetur nobis tempore dolores vitae quibusdam rerum.</p>
-                        <h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
-                    </article>
-
-                    <article class="entry">
-                        <h4 class="entry--title">Título de la entrada</h4>
-                        <p class="entry--content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum
-                            nobis dolorem iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut
-                            consectetur nobis tempore dolores vitae quibusdam rerum.</p>
-                        <h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
-                    </article>
-
-                    <article class="entry">
-                        <h4 class="entry--title">Título de la entrada</h4>
-                        <p class="entry--content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum
-                            nobis dolorem iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut
-                            consectetur nobis tempore dolores vitae quibusdam rerum.</p>
-                        <h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
-                    </article>
-                </section>
-                <section class="news--backend">
-                    <h2>Noticias de Backend</h2>
-                    <article class="entry">
-                        <h4 class="entry--title">Título de la entrada</h4>
-                        <p class="entry--content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum harum
-                            nobis dolorem iure veniam hic distinctio vitae omnis fuga? Reprehenderit ipsa nulla ut
-                            consectetur nobis tempore dolores vitae quibusdam rerum.</p>
-                        <h5 class="entry--author">12-03-2019 por Carlos Arturo Vargas</h5>
-                    </article>
-                </section>
-                <a href="">Ver histórico de noticias</a>
-            </section>
-        </main>
-    </div>
-
-    <footer>
-        <p>
-            &copy; Desarrollado por Carlos Arturo Vargas
-            <span>Más proyectos proximamente</span>
-        </p>
-    </footer>
-</body>
-
+		<footer>
+			<p>
+				&copy; Desarrollado por Carlos Arturo Vargas
+				<span>Más proyectos proximamente</span>
+			</p>
+		</footer>
+	</body>
 </html>
