@@ -1,4 +1,4 @@
-main {
+.content {
 	margin-top: 2rem;
 }
 
@@ -63,7 +63,7 @@ aside {
 
 .enlaces--interes {
 	&-item {
-		margin-left: 2rem;
+		margin-left: 0.85rem;
 	}
 
 	a {
@@ -73,7 +73,7 @@ aside {
 
 .frase {
 	text-align: left;
-	// margin-bottom: 5rem;
+	margin-bottom: 5rem;
 
 	span {
 		display: block;
@@ -87,7 +87,6 @@ aside {
 }
 
 .new {
-	
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	margin-bottom: 5rem;
@@ -95,6 +94,10 @@ aside {
 	padding: 2em;
 	box-shadow: 2px 2px 1px #ccc;
 	position: relative;
+
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
 
 	&--title {
 		margin-top: -1rem;
@@ -134,11 +137,12 @@ aside {
 	}
 
 	&--content, &--date {
-		margin-top: 0.25rem;
+		margin-top: 0.5rem;
 	}
 
 	&--content {
 		color: initial;
+		line-height: 1.5;
 	}
 
 	
@@ -150,24 +154,32 @@ aside {
 	top: -2px;
 }
 
+.history {
+	font-size: 1.2em;
+	text-align: center;
+
+	&-link:hover {
+		text-decoration: underline;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.container {
-		width: 90%;
-		max-width: 1100px;
+		width: 95%;
+		max-width: 1250px;
 		margin: 0 auto;
 	}
 
-	main {
+	.content {
 		display: flex;
 		justify-content: space-between;
 	}
 
 	aside {
-		width: 26%;
-		margin-right: 2rem;
+		width: 20%;
 	}
 
 	.news {
-		width: 74%;
+		width: 75%;
 	}
 }
