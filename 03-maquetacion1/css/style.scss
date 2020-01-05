@@ -28,6 +28,20 @@
 	
 }
 
+@font-face {
+	font-family: "icons";
+	src: url("./fonts/websymbols-regular-webfont.svg#WebSimbolsRegular") format('svg'),
+		 url("./fonts/websymbols-regular-webfont.eot");
+	src: url("./fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("./fonts/websymbols-regular-webfont.woff") format("woff"), 
+		 url("./fonts/websymbols-regular-webfont.ttf") format("truetype");
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 .br-none {
 	border-right: none !important;
 }

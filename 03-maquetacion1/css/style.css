@@ -27,6 +27,13 @@
   font-family: "Fjalla";
   src: url("./fonts/FjallaOne-Regular.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "icons";
+  src: url("./fonts/websymbols-regular-webfont.svg#WebSimbolsRegular") format("svg"), url("./fonts/websymbols-regular-webfont.eot");
+  src: url("./fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/websymbols-regular-webfont.woff") format("woff"), url("./fonts/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .br-none {
   border-right: none !important; }
 
@@ -246,7 +253,7 @@ aside {
 .new {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   background-color: #fff;
   padding: 2em;
   box-shadow: 2px 2px 1px #ccc;
@@ -282,6 +289,17 @@ aside {
   color: gray;
   font-size: 0.8em; }
 
+.entry--content, .entry--date {
+  margin-top: 0.25rem; }
+
+.entry--content {
+  color: initial; }
+
+.icon {
+  font-family: 'icons';
+  position: relative;
+  top: -2px; }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 90%;
@@ -292,7 +310,7 @@ aside {
     justify-content: space-between; }
   aside {
     width: 26%;
-    margin-right: 1rem; }
+    margin-right: 2rem; }
   .news {
     width: 74%; } }
 
