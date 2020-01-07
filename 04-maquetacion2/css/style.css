@@ -1,7 +1,9 @@
 :root {
   --height-header: 4.375rem;
   --bg-logo: #f2cb05;
-  --color-card: #00538c; }
+  --color-card: #00538c;
+  --color-p-card: #0a96f7;
+  --bg-h-article: #393d3f; }
 
 @font-face {
   font-family: "icons";
@@ -153,7 +155,7 @@ nav {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   padding: 0 0.5em;
-  color: #0a96f7; }
+  color: var(--color-p-card); }
 
 .content {
   display: flex;
@@ -177,7 +179,29 @@ nav {
   font-size: 1.5em; }
 
 .entry {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1px #ccc;
+  padding: 1em;
+  position: relative;
+  font-family: "TrebuchetMS"; }
+
+.entry--content {
+  margin-top: 1rem; }
+
+.entry--header {
+  background-color: var(--bg-h-article);
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 0 0 2px 2px; }
+
+.entry--link {
+  display: inline-block;
+  margin-top: 1rem; }
 
 .aside {
   width: 25%; }

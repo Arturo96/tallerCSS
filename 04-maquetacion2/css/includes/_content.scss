@@ -25,6 +25,32 @@
 
 .entry {
 	margin-top: 3rem;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 1px #ccc;
+	padding: 1em;
+	position: relative;
+	font-family: "TrebuchetMS";
+
+	&--content {
+		// text-align: justify;
+		margin-top: 1rem;
+	}
+
+	&--header {
+		background-color: var(--bg-h-article);
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: #fff;
+		padding: 0.5em;
+		border-radius: 0 0 2px 2px;
+	}
+
+	&--link {
+		display: inline-block;
+		margin-top: 1rem;
+	}
 }
 
 .aside {
