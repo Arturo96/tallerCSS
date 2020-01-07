@@ -1,42 +1,49 @@
 @font-face {
-    font-family: 'icons';
-    src: url("../fonts/websymbols-regular-webfont.svg") format('svg'),
-         url("../fonts/websymbols-regular-webfont.eot");
-    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format('embedded-opentype'),
-    url("../fonts/websymbols-regular-webfont.woff") format('woff'),
-    url("../fonts/websymbols-regular-webfont.ttf") format('truetype');  
+	font-family: "icons";
+	src: url("../fonts/websymbols-regular-webfont.svg") format("svg"),
+		url("../fonts/websymbols-regular-webfont.eot");
+	src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+		url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'BebasNeue';
-    src: url(../fonts/BebasNeue.otf) 
+	font-family: "BebasNeue";
+	src: url(../fonts/BebasNeue.otf);
 }
 
 @font-face {
-    font-family: 'TrebuchetMS';
-    src: url(../fonts/TrebuchetMS.ttf) format('truetype');
+	font-family: "TrebuchetMS";
+	src: url(../fonts/TrebuchetMS.ttf) format("truetype");
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 body {
-    background: url(../img/pattern.png) fixed;
+	background: url(../img/pattern.png) fixed;
 }
 
 /* Icono de Ajustes */
 .gear {
-    font-family: 'icons';
+	font-family: "icons";
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
 }

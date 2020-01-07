@@ -1,14 +1,19 @@
 .banner {
-    width: 90%;
-    height: 100px;
-    background: url("../img/bakbaner.png") center;
-    box-shadow: 0 0 2px gray;
-    border: 10px solid white;
-    font-family: "BebasNeue";
-    color: #fff;
-    @include flex-center;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    margin: 1.25rem auto 0;
-    text-shadow: 2px 2px 1px #000;
+	// height: 4em;
+	padding: 1em;
+	background: url("../img/bakbaner.png") center;
+	box-shadow: 0 0 2px gray;
+	font-size: 2em;
+	border: 10px solid white;
+	@include flex-center;
+	margin: 1.25rem auto 0;
+	text-align: center;
+
+	h1 {
+		font-family: "BebasNeue";
+		font-weight: normal;
+		color: #fff;
+		letter-spacing: 3px;
+		text-shadow: 2px 2px 1px #000;
+	}
 }
