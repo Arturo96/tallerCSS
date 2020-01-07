@@ -2,10 +2,11 @@
 	margin-top: 2rem;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .card {
-	width: 17%;
+	flex-basis: 17%;
 	background-color: #fff;
 	color: var(--color-card);
 	border: 1px solid #ccc;
