@@ -1,0 +1,51 @@
+.content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6rem;
+
+	h2,
+	h3 {
+		text-align: center;
+		font-family: "BebasNeue";
+		letter-spacing: 2px;
+		font-weight: normal;
+		background: url(../img/pxgray.png);
+		box-shadow: 2px 2px 2px #000;
+		padding: 0.25em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+}
+
+.entry {
+	margin-top: 3rem;
+}
+
+.aside {
+	width: 25%;
+
+	h3 {
+		margin-top: 2rem;
+	}
+
+	.find--title {
+		margin-top: 0;
+	}
+}
+
+.last-articles {
+	width: 70%;
+	h2 {
+		text-transform: uppercase;
+	}
+}
+
+[class$="form"] {
+	margin-top: 2rem;
+}

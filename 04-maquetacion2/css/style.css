@@ -37,7 +37,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   height: 100%;
   margin: 0 auto; }
 
@@ -136,7 +136,8 @@ nav {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 2px #ccc;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .card--icon {
   color: initial;
@@ -151,4 +152,47 @@ nav {
 .card--content {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  padding: 0 0.5em; }
+  padding: 0 0.5em;
+  color: #0a96f7; }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem; }
+
+.content h2,
+.content h3 {
+  text-align: center;
+  font-family: "BebasNeue";
+  letter-spacing: 2px;
+  font-weight: normal;
+  background: url(../img/pxgray.png);
+  box-shadow: 2px 2px 2px #000;
+  padding: 0.25em; }
+
+.content h2 {
+  font-size: 2em; }
+
+.content h3 {
+  font-size: 1.5em; }
+
+.entry {
+  margin-top: 3rem; }
+
+.aside {
+  width: 25%; }
+
+.aside h3 {
+  margin-top: 2rem; }
+
+.aside .find--title {
+  margin-top: 0; }
+
+.last-articles {
+  width: 70%; }
+
+.last-articles h2 {
+  text-transform: uppercase; }
+
+[class$="form"] {
+  margin-top: 2rem; }
