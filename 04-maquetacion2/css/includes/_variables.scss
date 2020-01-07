@@ -2,3 +2,9 @@
     --height-header: 4.375rem;
     --bg-logo: #F2CB05;
 }
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
