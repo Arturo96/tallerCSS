@@ -116,6 +116,42 @@
 	}
 }
 
+.find--form {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #ccc inset;
+
+	input {
+		width: var(--input-width);
+		font-size: 1em;
+		padding: 0.5em;
+		border-radius: 5px;
+		border: none;
+	}
+
+	button {
+		width: calc(100% - var(--input-width));
+		border: none;
+		border-left: 1px solid #ccc;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #ccc;
+		}
+	}
+
+	input,
+	button {
+		background: transparent;
+	}
+}
+
 .tw {
 	color: var(--color-tw);
 }

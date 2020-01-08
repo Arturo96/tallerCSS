@@ -7,7 +7,8 @@
   --color-fb: #3b5998;
   --color-tw: #00acee;
   --color-go: #db4a39;
-  --color-yu: #c4302b; }
+  --color-yu: #c4302b;
+  --input-width: 85%; }
 
 @font-face {
   font-family: "icons";
@@ -257,6 +258,37 @@ nav {
 
 .social--icons span:not(:first-child) {
   margin-top: 1rem; }
+
+.find--form {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #ccc inset; }
+
+.find--form input {
+  width: var(--input-width);
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none; }
+
+.find--form button {
+  width: calc(100% - var(--input-width));
+  border: none;
+  border-left: 1px solid #ccc;
+  cursor: pointer; }
+
+.find--form button:hover {
+  background-color: #ccc; }
+
+.find--form input,
+.find--form button {
+  background: transparent; }
 
 .tw {
   color: var(--color-tw); }
