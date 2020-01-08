@@ -3,7 +3,11 @@
   --bg-logo: #f2cb05;
   --color-card: #00538c;
   --color-p-card: #0a96f7;
-  --bg-h-article: #393d3f; }
+  --bg-h-article: #393d3f;
+  --color-fb: #3b5998;
+  --color-tw: #00acee;
+  --color-go: #db4a39;
+  --color-yu: #c4302b; }
 
 @font-face {
   font-family: "icons";
@@ -34,7 +38,7 @@ body {
   background: url(../img/pattern.png) fixed; }
 
 /* Icono de Ajustes */
-.gear {
+.gear, .icon {
   font-family: "icons"; }
 
 .container {
@@ -179,6 +183,7 @@ nav {
   font-size: 1.5em; }
 
 .entry {
+  font-size: 0.9em;
   margin-top: 3rem;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -186,6 +191,10 @@ nav {
   padding: 1em;
   position: relative;
   font-family: "TrebuchetMS"; }
+
+.entry--title {
+  color: var(--color-card);
+  font-size: 1.5em; }
 
 .entry--content {
   margin-top: 1rem; }
@@ -197,11 +206,22 @@ nav {
   right: 0;
   color: #fff;
   padding: 0.5em;
-  border-radius: 0 0 2px 2px; }
+  border-radius: 0 0 2px 2px;
+  font-size: 0.85em; }
 
 .entry--link {
   display: inline-block;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  color: var(--color-p-card); }
+
+.entry--link:hover {
+  text-decoration: underline; }
+
+.last-articles {
+  width: 70%; }
+
+.last-articles h2 {
+  text-transform: uppercase; }
 
 .aside {
   width: 25%; }
@@ -212,11 +232,40 @@ nav {
 .aside .find--title {
   margin-top: 0; }
 
-.last-articles {
-  width: 70%; }
-
-.last-articles h2 {
-  text-transform: uppercase; }
-
 [class$="form"] {
   margin-top: 2rem; }
+
+.login--form {
+  margin-top: 0; }
+
+.login--box {
+  box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
+  width: 90%;
+  margin: 1rem auto 0;
+  padding: 1.25em; }
+
+.social--icons {
+  box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
+  width: 60%;
+  margin: 1rem auto 0;
+  padding: 1em;
+  text-align: center; }
+
+.social--icons span {
+  display: block;
+  font-size: 2.5em; }
+
+.social--icons span:not(:first-child) {
+  margin-top: 1rem; }
+
+.tw {
+  color: var(--color-tw); }
+
+.fb {
+  color: var(--color-fb); }
+
+.go {
+  color: var(--color-go); }
+
+.yu {
+  color: var(--color-yu); }
