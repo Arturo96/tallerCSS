@@ -96,7 +96,7 @@
 	box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
 	width: 90%;
 	margin: 1rem auto 0;
-	padding: 1.25em;
+	padding: 1em;
 }
 
 .social--icons {
@@ -126,12 +126,12 @@
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-shadow: 1px 1px 4px #ccc inset;
+	overflow: hidden;
 
 	input {
 		width: var(--input-width);
 		font-size: 1em;
 		padding: 0.5em;
-		border-radius: 5px;
 		border: none;
 	}
 
@@ -140,6 +140,7 @@
 		border: none;
 		border-left: 1px solid #ccc;
 		cursor: pointer;
+		transition: all 0.5s;
 
 		&:hover {
 			background-color: #ccc;
@@ -149,6 +150,43 @@
 	input,
 	button {
 		background: transparent;
+	}
+}
+
+.form-group {
+	margin-top: 1rem;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #ccc;
+	display: flex;
+	overflow: hidden;
+
+	&:focus-within {
+		box-shadow: 0 0 3px blue;
+	}
+
+	label {
+		text-align: center;
+		width: calc(100% - var(--input-form-group));
+		align-self: center;
+		display: block;
+	}
+
+	input {
+		width: var(--input-form-group);
+		border: none;
+		padding: 0.35em;
+		padding-left: 0;
+		font-size: 1em;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	a {
+		color: inherit;
 	}
 }
 

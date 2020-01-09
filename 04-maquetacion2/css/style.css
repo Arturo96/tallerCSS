@@ -8,7 +8,8 @@
   --color-tw: #00acee;
   --color-go: #db4a39;
   --color-yu: #c4302b;
-  --input-width: 85%; }
+  --input-width: 85%;
+  --input-form-group: 85%; }
 
 @font-face {
   font-family: "icons";
@@ -39,7 +40,8 @@ body {
   background: url(../img/pattern.png) fixed; }
 
 /* Icono de Ajustes */
-.gear, .icon {
+.gear,
+.icon {
   font-family: "icons"; }
 
 .container {
@@ -47,6 +49,9 @@ body {
   max-width: 1100px;
   height: 100%;
   margin: 0 auto; }
+
+.mt-0 {
+  margin-top: 0 !important; }
 
 .header {
   height: var(--height-header);
@@ -243,7 +248,7 @@ nav {
   box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
   width: 90%;
   margin: 1rem auto 0;
-  padding: 1.25em; }
+  padding: 1em; }
 
 .social--icons {
   box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
@@ -268,20 +273,21 @@ nav {
   justify-content: space-between;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 1px 1px 4px #ccc inset; }
+  box-shadow: 1px 1px 4px #ccc inset;
+  overflow: hidden; }
 
 .find--form input {
   width: var(--input-width);
   font-size: 1em;
   padding: 0.5em;
-  border-radius: 5px;
   border: none; }
 
 .find--form button {
   width: calc(100% - var(--input-width));
   border: none;
   border-left: 1px solid #ccc;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.5s; }
 
 .find--form button:hover {
   background-color: #ccc; }
@@ -289,6 +295,37 @@ nav {
 .find--form input,
 .find--form button {
   background: transparent; }
+
+.form-group {
+  margin-top: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #ccc;
+  display: flex;
+  overflow: hidden; }
+
+.form-group:focus-within {
+  box-shadow: 0 0 3px blue; }
+
+.form-group label {
+  text-align: center;
+  width: calc(100% - var(--input-form-group));
+  align-self: center;
+  display: block; }
+
+.form-group input {
+  width: var(--input-form-group);
+  border: none;
+  padding: 0.35em;
+  padding-left: 0;
+  font-size: 1em; }
+
+.form-group input:focus {
+  outline: none; }
+
+.form-group a {
+  color: inherit; }
 
 .tw {
   color: var(--color-tw); }
