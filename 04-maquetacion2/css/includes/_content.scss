@@ -86,6 +86,20 @@
 
 [class$="form"] {
 	margin-top: 2rem;
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"] {
+		margin-top: 1rem;
+		font-family: "TrebuchetMS";
+		font-size: 0.9em;
+		padding: 0.5em 1.85em;
+		cursor: pointer;
+		background-color: var(--bg-button);
+		border: thin solid #000;
+		border-left: none;
+		color: #fff;
+	}
 }
 
 .login--form {
@@ -97,6 +111,21 @@
 	width: 90%;
 	margin: 1rem auto 0;
 	padding: 1em;
+	font-family: "TrebuchetMS";
+}
+
+.login--link {
+	margin-top: 0.5rem;
+	font-size: 0.85em;
+	display: block;
+
+	&:first-of-type {
+		margin-top: 1rem;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .social--icons {
@@ -188,6 +217,11 @@
 	a {
 		color: inherit;
 	}
+}
+
+.button-group {
+	display: flex;
+	justify-content: space-between;
 }
 
 .tw {
