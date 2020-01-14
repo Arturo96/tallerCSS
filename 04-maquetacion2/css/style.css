@@ -332,7 +332,7 @@ nav {
   overflow: hidden; }
 
 .form-group:focus-within {
-  box-shadow: 0 0 3px blue; }
+  box-shadow: 1px 1px 1px gray; }
 
 .form-group label {
   text-align: center;
