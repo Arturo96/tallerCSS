@@ -1,3 +1,5 @@
+/* MAIN */
+
 .content {
 	display: flex;
 	justify-content: space-between;
@@ -22,6 +24,8 @@
 		font-size: 1.5em;
 	}
 }
+
+/* CADA ARTÍCULO */
 
 .entry {
 	font-size: 0.9em;
@@ -100,9 +104,11 @@
 		border: thin solid #000;
 		border-left: none;
 		color: #fff;
+		transition: all 0.5s;
 
 		&:hover {
 			background-image: linear-gradient(#76d8fc 0%, #36b9e9 100%);
+			box-shadow: 0 0 3px gray;
 		}
 	}
 }
@@ -224,24 +230,6 @@
 	}
 }
 
-.blog--link {
-	display: block;
-	margin-top: 4rem;
-	font-family: "BebasNeue";
-	font-size: 2.5em;
-	letter-spacing: 3px;
-	padding: 0.85em;
-	border: 1px solid #ccc;
-	box-shadow: 0 0 1px #ccc, 0 1px 2px #ccc;
-	text-align: center;
-	color: var(--color-card);
-	transition: all 0.5s;
-
-	&:hover {
-		box-shadow: 0 0 5px #ccc, 0 3px 5px #ccc;
-	}
-}
-
 .button-group {
 	display: flex;
 	justify-content: space-between;
@@ -261,4 +249,25 @@
 
 .yu {
 	color: var(--color-yu);
+}
+/*  FIN Aside */
+
+/* BOTÓN DE IR AL BLOG */
+
+.blog--link {
+	display: block;
+	margin-top: 4rem;
+	font-family: "BebasNeue";
+	font-size: 2.5em;
+	letter-spacing: 3px;
+	padding: 0.85em;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 1px #ccc, 0 1px 2px #ccc;
+	text-align: center;
+	color: var(--color-card);
+	transition: all 0.5s;
+
+	&:hover {
+		box-shadow: 0 0 5px #ccc, 0 3px 5px #ccc;
+	}
 }
