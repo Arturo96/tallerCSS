@@ -216,7 +216,7 @@ nav {
   right: 0;
   color: #fff;
   padding: 0.5em;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 0 2px;
   font-size: 0.85em; }
 
 .entry--link {
@@ -343,7 +343,7 @@ nav {
   overflow: hidden; }
 
 .form-group:focus-within {
-  box-shadow: 1px 1px 1px gray; }
+  box-shadow: 1px 1px 1px blue, -1px -1px 1px blue; }
 
 .form-group label {
   text-align: center;
@@ -397,3 +397,60 @@ nav {
 
 .blog--link:hover {
   box-shadow: 0 0 5px #ccc, 0 3px 5px #ccc; }
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 1em 0;
+  font-family: "Trebuchet MS"; }
+
+.footer--container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between; }
+
+.flex-item {
+  width: 30%; }
+
+.flex-item h2 {
+  text-align: center;
+  font-family: "BebasNeue";
+  letter-spacing: 2px;
+  font-weight: normal;
+  background: url(../img/pxgray.png) #fff;
+  box-shadow: 2px 2px 2px #000;
+  border-radius: 5px;
+  padding: 0.25em;
+  margin-top: 1rem;
+  font-size: 2em;
+  color: #000; }
+
+.flex-item ul {
+  margin-top: 1rem; }
+
+.flex-item li {
+  display: block;
+  font-size: 1.5em;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc; }
+
+.flex-item a {
+  color: var(--bg-logo);
+  transition: all 0.5s; }
+
+.flex-item a:hover {
+  color: var(--color-p-card); }
+
+.location iframe {
+  margin-top: 2rem;
+  width: 100%; }
+
+.image {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; }
+
+.image img {
+  width: 100%; }
