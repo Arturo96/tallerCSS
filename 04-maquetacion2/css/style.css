@@ -225,7 +225,8 @@ nav {
   text-decoration: underline; }
 
 .last-articles {
-  width: 70%; }
+  width: 70%;
+  padding-bottom: 2em; }
 
 .last-articles h2 {
   text-transform: uppercase; }
@@ -250,10 +251,15 @@ nav {
   font-size: 0.9em;
   padding: 0.5em 1.85em;
   cursor: pointer;
-  background-color: var(--bg-button);
+  background-image: linear-gradient(#3eb7e4 0%, #2ea2cd 100%);
   border: thin solid #000;
   border-left: none;
   color: #fff; }
+
+[class$="form"] input[type="button"]:hover,
+[class$="form"] input[type="submit"]:hover,
+[class$="form"] input[type="reset"]:hover {
+  background-image: linear-gradient(#76d8fc 0%, #36b9e9 100%); }
 
 .login--form {
   margin-top: 0; }
@@ -352,6 +358,22 @@ nav {
 
 .form-group a {
   color: inherit; }
+
+.blog--link {
+  display: block;
+  margin-top: 4rem;
+  font-family: "BebasNeue";
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  padding: 0.85em;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1px #ccc, 0 1px 2px #ccc;
+  text-align: center;
+  color: var(--color-card);
+  transition: all 0.5s; }
+
+.blog--link:hover {
+  box-shadow: 0 0 5px #ccc, 0 3px 5px #ccc; }
 
 .button-group {
   display: flex;
