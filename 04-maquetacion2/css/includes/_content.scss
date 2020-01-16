@@ -250,6 +250,20 @@
 .yu {
 	color: var(--color-yu);
 }
+
+.featuring--box {
+	box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
+	margin: 1rem auto 0;
+	padding: 1em;
+	font-family: "TrebuchetMS";
+
+	h5 {
+		text-align: center;
+		line-height: 2.5;
+		font-size: 1.15em;
+	}
+}
+
 /*  FIN Aside */
 
 /* BOTÓN DE IR AL BLOG */
