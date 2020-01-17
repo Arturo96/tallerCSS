@@ -439,10 +439,10 @@ footer {
   color: #000; }
 
 .flex-item ul {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin-left: 1rem; }
 
 .flex-item li {
-  display: block;
   font-size: 1.5em;
   line-height: 2.5;
   border-bottom: 1px solid #ccc; }
