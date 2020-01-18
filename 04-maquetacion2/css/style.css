@@ -166,14 +166,38 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 1.25rem auto 0;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  animation: moveBanner 10s linear infinite alternate; }
 
 .banner h1 {
   font-family: "BebasNeue";
   font-weight: normal;
   color: #fff;
   letter-spacing: 3px;
-  text-shadow: 2px 2px 1px #000; }
+  text-shadow: 2px 2px 1px #000;
+  animation: moveText 6s linear; }
+
+@keyframes moveBanner {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: center; } }
+
+@keyframes moveText {
+  0% {
+    transform: translateX(200%) scale(2.5, 2.5); }
+  50% {
+    transform: translateX(-200%) scale(2.5, 2.5);
+    opacity: 1; }
+  75% {
+    transform: translateX(150%) scale(2.5, 2.5);
+    text-shadow: none;
+    color: transparent;
+    opacity: 0; }
+  100% {
+    transform: translateX(0%) scale(1, 1);
+    opacity: 1; } }
 
 .cards {
   margin-top: 2rem;

@@ -1,19 +1,51 @@
 .banner {
-	// height: 4em;
-	padding: 1em;
-	background: url("../img/bakbaner.png") center;
-	box-shadow: 0 0 2px gray;
-	font-size: 2em;
-	border: 10px solid white;
-	@include flex-center;
-	margin: 1.25rem auto 0;
-	text-align: center;
+  // height: 4em;
+  padding: 1em;
+  background: url("../img/bakbaner.png") center;
+  box-shadow: 0 0 2px gray;
+  font-size: 2em;
+  border: 10px solid white;
+  @include flex-center;
+  margin: 1.25rem auto 0;
+  text-align: center;
+  overflow: hidden;
+  animation: moveBanner 10s linear infinite alternate;
 
-	h1 {
-		font-family: "BebasNeue";
-		font-weight: normal;
-		color: #fff;
-		letter-spacing: 3px;
-		text-shadow: 2px 2px 1px #000;
-	}
+  h1 {
+    font-family: "BebasNeue";
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 1px #000;
+    animation: moveText 6s linear;
+  }
+}
+
+@keyframes moveBanner {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: center;
+  }
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(200%) scale(2.5, 2.5);
+  }
+  50% {
+    transform: translateX(-200%) scale(2.5, 2.5);
+    opacity: 1;
+  }
+  75% {
+	transform: translateX(150%) scale(2.5, 2.5);
+	text-shadow: none;
+	color: transparent;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+  }
 }
