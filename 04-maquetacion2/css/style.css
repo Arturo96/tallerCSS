@@ -11,7 +11,9 @@
   --color-go: #db4a39;
   --color-yu: #c4302b;
   --input-width: 85%;
-  --input-form-group: 85%; }
+  --input-form-group: 85%;
+  /* Tiempos */
+  --time-logo: .5s; }
 
 @font-face {
   font-family: "icons";
@@ -75,7 +77,20 @@ body {
   margin-left: 3.8rem;
   align-self: center;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden;
+  transition: all .8s; }
+
+.logo:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer; }
+
+.logo:hover .gear {
+  animation: fromBellow var(--time-logo) linear; }
+
+.logo:hover h3 {
+  animation: fromRight var(--time-logo) linear; }
 
 .logo h3 {
   font-size: 40px;
@@ -86,7 +101,30 @@ body {
 .logo .gear {
   font-size: 30px;
   margin-left: 1.25rem;
-  margin-right: 0.5rem; }
+  margin-right: 0.5rem;
+  animation: gear-rotate 2s linear infinite; }
+
+@keyframes gear-rotate {
+  from {
+    transform: rotateZ(0); }
+  to {
+    transform: rotateZ(360deg); } }
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(0%); }
+  50% {
+    transform: translateX(200%); }
+  100% {
+    transform: translateX(0%); } }
 
 nav {
   width: 60%; }
