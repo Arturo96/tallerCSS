@@ -14,7 +14,12 @@
   --input-width: 85%;
   --input-form-group: 85%;
   /* Tiempos */
-  --time-logo: .5s; }
+  --time-logo: .5s;
+  /* Font size */
+  --size-banner: 1.5em; }
+  @media screen and (min-width: 768px) {
+    :root {
+      --size-banner: 2em; } }
 
 @font-face {
   font-family: "icons";
@@ -153,6 +158,7 @@ nav {
     flex: auto;
     text-align: center; }
   .menu--link {
+    display: block;
     transition: all 0.5s;
     line-height: 2;
     color: #fff;
@@ -172,7 +178,7 @@ nav {
   padding: 1em;
   background: url("../img/bakbaner.png") center;
   box-shadow: 0 0 2px gray;
-  font-size: 2em;
+  font-size: var(--size-banner);
   border: 10px solid white;
   display: flex;
   justify-content: center;
@@ -186,8 +192,10 @@ nav {
     font-weight: normal;
     color: #fff;
     letter-spacing: 3px;
-    text-shadow: 2px 2px 1px #000;
-    animation: moveText 6s linear; }
+    text-shadow: 2px 2px 1px #000; }
+    @media screen and (min-width: 1150px) {
+      .banner h1 {
+        animation: moveText 6s linear; } }
 
 @keyframes moveBanner {
   from {
@@ -213,11 +221,15 @@ nav {
 .cards {
   margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap; }
+  @media screen and (min-width: 768px) {
+    .cards {
+      justify-content: space-between; } }
 
 .card {
-  flex-basis: 17%;
+  margin-top: 1rem;
+  flex-basis: 45%;
   background-color: #fff;
   color: var(--color-card);
   border: 1px solid #ccc;
@@ -227,6 +239,10 @@ nav {
   cursor: pointer;
   overflow: hidden;
   transition: all .3s; }
+  @media screen and (min-width: 768px) {
+    .card {
+      margin-top: 0;
+      flex-basis: 17%; } }
   .card:hover {
     background-color: #000;
     color: #fff; }

@@ -1,15 +1,15 @@
 .banner {
-  // height: 4em;
   padding: 1em;
   background: url("../img/bakbaner.png") center;
   box-shadow: 0 0 2px gray;
-  font-size: 2em;
+  font-size: var(--size-banner);
   border: 10px solid white;
   @include flex-center;
   margin: 1.25rem auto 0;
   text-align: center;
   overflow: hidden;
   animation: moveBanner 10s linear infinite alternate;
+  
 
   h1 {
     font-family: "BebasNeue";
@@ -17,7 +17,9 @@
     color: #fff;
     letter-spacing: 3px;
     text-shadow: 2px 2px 1px #000;
-    animation: moveText 6s linear;
+    @include from(1150px) {
+      animation: moveText 6s linear;
+    }
   }
 }
 
