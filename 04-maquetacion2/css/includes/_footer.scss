@@ -42,11 +42,13 @@ footer {
 	}
 
 	a {
+		display: block;
 		color: var(--bg-logo);
 		transition: all 0.5s;
 
 		&:hover {
 			color: var(--color-p-card);
+			padding-left: 2em;
 		}
 	}
 }

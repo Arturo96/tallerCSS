@@ -385,8 +385,8 @@ nav {
   text-shadow: 0 0 1px #ccc;
   box-shadow: 0 0 3px #ccc;
   color: #8d8d8d;
-  transition: all .3s;
-  padding: .25em .85em;
+  transition: all 0.3s;
+  padding: 0.25em 0.85em;
   opacity: 0; }
 
 .find--form {
@@ -484,7 +484,25 @@ nav {
   color: var(--color-card);
   transition: all 0.5s; }
   .blog--link:hover {
-    box-shadow: 0 0 5px #ccc, 0 3px 5px #ccc; }
+    border: 10px solid var(--bg-logo);
+    border-radius: 160px;
+    background-color: #333;
+    color: var(--bg-logo);
+    box-shadow: 0 0 10px #ccc;
+    text-shadow: 1px 1px 1px #000, 1px 2px 1px #000,  1px 3px 1px #000, 1px 4px 1px #000, 1px 5px 1px #000, 1px 6px 1px #000;
+    animation: neon 10s infinite linear; }
+
+@keyframes neon {
+  0% {
+    border-color: var(--bg-logo); }
+  25% {
+    border-color: var(--color-p-card); }
+  50% {
+    border-color: var(--color-card); }
+  75% {
+    border-color: var(--color-yu); }
+  100% {
+    border-color: purple; } }
 
 footer {
   background-color: #000;
@@ -521,10 +539,12 @@ footer {
     line-height: 2.5;
     border-bottom: 1px solid #ccc; }
   .flex-item a {
+    display: block;
     color: var(--bg-logo);
     transition: all 0.5s; }
     .flex-item a:hover {
-      color: var(--color-p-card); }
+      color: var(--color-p-card);
+      padding-left: 2em; }
 
 .location iframe {
   margin-top: 2rem;
