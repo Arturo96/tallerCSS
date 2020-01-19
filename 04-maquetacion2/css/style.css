@@ -59,28 +59,38 @@ body {
   margin-top: 0 !important; }
 
 .header {
-  height: var(--height-header);
   background-color: black;
   color: #fff;
   font-family: "BebasNeue"; }
+  @media screen and (min-width: 768px) {
+    .header {
+      height: var(--height-header); } }
 
 .wrap {
-  width: 90%;
-  max-width: 1200px;
   height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; }
+  padding-top: 1rem; }
+  @media screen and (min-width: 768px) {
+    .wrap {
+      padding-top: 0;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between; } }
 
 .logo {
   background-color: var(--bg-logo);
   width: 180px;
-  margin-left: 3.8rem;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
   display: flex;
   align-items: center;
   overflow: hidden;
-  transition: all .8s; }
+  transition: all 0.8s; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      margin-left: 3.8rem; } }
   .logo:hover {
     background-color: #ccc;
     color: #000;
@@ -123,27 +133,37 @@ body {
     transform: translateX(0%); } }
 
 nav {
-  width: 60%; }
+  margin-top: 1rem; }
+  @media screen and (min-width: 768px) {
+    nav {
+      margin-top: 0;
+      width: 60%; } }
   @media screen and (min-width: 1100px) {
     nav {
       margin-right: 4rem; } }
 
 .menu {
-  height: 100%;
-  list-style: none;
-  display: flex; }
+  list-style: none; }
+  @media screen and (min-width: 768px) {
+    .menu {
+      height: 100%;
+      display: flex; } }
   .menu--item {
     height: 100%;
-    flex: auto; }
+    flex: auto;
+    text-align: center; }
   .menu--link {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all 0.5s;
+    line-height: 2;
     color: #fff;
     font-size: 1.5em;
     letter-spacing: 2px; }
+    @media screen and (min-width: 768px) {
+      .menu--link {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
     .menu--link:hover {
       color: var(--bg-logo);
       transform: scale(1.25, 1.25); }
