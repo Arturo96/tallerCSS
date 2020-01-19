@@ -4,6 +4,7 @@
   --bg-logo: #f2cb05;
   --color-card: #00538c;
   --color-p-card: #0a96f7;
+  --color-icon-hover: #37bcf9;
   --bg-h-article: #393d3f;
   --bg-button: #31a7d2;
   --color-fb: #3b5998;
@@ -213,7 +214,25 @@ nav {
   box-shadow: 1px 1px 2px #ccc;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .3s; }
+
+.card:hover {
+  background-color: #000;
+  color: #fff; }
+
+.card:hover .card--icon {
+  color: var(--bg-logo);
+  transform: scale(1.35, 1.35);
+  animation: moveIcon .3s linear; }
+
+.card:hover .card--title {
+  animation: bottomText .4s linear; }
+
+.card:hover .card--content {
+  color: inherit;
+  animation: showContent .4s linear; }
 
 .card--icon {
   color: initial;
@@ -223,6 +242,7 @@ nav {
   margin-top: 1.5rem; }
 
 .card--title {
+  font-size: 1.3em;
   margin-top: 2rem; }
 
 .card--content {
@@ -230,6 +250,24 @@ nav {
   margin-bottom: 1rem;
   padding: 0 0.5em;
   color: var(--color-p-card); }
+
+@keyframes moveIcon {
+  from {
+    transform: translateY(-200%); }
+  to {
+    transform: translateY(0) scale(1.35, 1.35); } }
+
+@keyframes bottomText {
+  from {
+    transform: translateY(-250%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes showContent {
+  from {
+    transform: translateX(-250%); }
+  to {
+    transform: translateY(0); } }
 
 /* MAIN */
 .content {
