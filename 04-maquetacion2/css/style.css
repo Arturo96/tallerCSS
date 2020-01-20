@@ -415,13 +415,22 @@ nav {
 
 @media screen and (min-width: 768px) {
   .last-articles {
+    width: 65%; } }
+
+@media screen and (min-width: 850px) {
+  .last-articles {
     width: 70%; } }
 
 .last-articles h2 {
   text-transform: uppercase; }
 
-.aside {
-  width: 25%; }
+@media screen and (min-width: 768px) {
+  .aside {
+    width: 30%; } }
+
+@media screen and (min-width: 850px) {
+  .aside {
+    width: 25%; } }
 
 .aside h3 {
   margin-top: 2rem; }
@@ -573,9 +582,19 @@ nav {
 .form-group a {
   color: inherit; }
 
-.button-group {
-  display: flex;
-  justify-content: space-between; }
+.button-group input {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (min-width: 1150px) {
+  .button-group {
+    display: flex;
+    justify-content: space-between; }
+  .button-group input {
+    width: auto;
+    margin: initial; } }
 
 .tw {
   color: var(--color-tw); }
