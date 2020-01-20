@@ -1,16 +1,29 @@
 .cards {
 	margin-top: 2rem;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	@include from(768px) {
+
+	@include from(400px) {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	@include from(800px) {
 		justify-content: space-between;
 	}
 }
 
 .card {
 	margin-top: 1rem;
-	@include from(768px) {
+
+	@include from(400px) {
+		flex-basis: 45%;
+	}
+
+	@include from(576px) {
+		flex-basis: 30%;
+	}
+
+	@include from(800px) {
 		margin-top: 0;
 		flex-basis: 17%;
 	}
@@ -23,7 +36,7 @@
 	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
-	transition: all .3s;
+	transition: all 0.3s;
 
 	&:hover {
 		background-color: #000;
@@ -32,17 +45,17 @@
 		.card--icon {
 			color: var(--bg-logo);
 			transform: scale(1.35, 1.35);
-			animation: moveIcon .3s linear;
+			animation: moveIcon 0.3s linear;
 		}
 
 		.card--title {
-			animation: bottomText .4s linear;
+			animation: bottomText 0.4s linear;
 		}
 
 		.card--content {
 			color: inherit;
 
-			animation: showContent .4s linear;
+			animation: showContent 0.4s linear;
 		}
 	}
 
@@ -51,17 +64,27 @@
 		font-family: "icons";
 		font-size: 3em;
 		display: inline-block;
-		margin-top: 1.5rem;
+		margin-top: 1rem;
+		@include from(400px) {
+			margin-top: 1.5rem;
+		}
 	}
 
 	&--title {
 		font-size: 1.3em;
-		margin-top: 2rem;
+		margin-top: 0.75rem;
+		@include from(400px) {
+			margin-top: 2rem;
+		}
 	}
 
 	&--content {
-		margin-top: 1.5rem;
-		margin-bottom: 1rem;
+		margin-top: 0.75rem;
+		margin-bottom: 0.5rem;
+		@include from(400px) {
+			margin-top: 1.5rem;
+			margin-bottom: 1rem;
+		}
 		padding: 0 0.5em;
 		color: var(--color-p-card);
 	}
@@ -96,5 +119,3 @@
 		transform: translateY(0);
 	}
 }
-
-
