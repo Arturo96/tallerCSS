@@ -386,8 +386,10 @@ nav {
   font-family: "TrebuchetMS"; }
 
 .entry--title {
+  display: block;
   color: var(--color-card);
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-top: 1.5rem; }
 
 .entry--content {
   margin-top: 1rem; }
@@ -400,7 +402,14 @@ nav {
   color: #fff;
   padding: 0.5em;
   border-radius: 0 0 0 2px;
-  font-size: 0.85em; }
+  font-size: 0.85em;
+  width: 100%;
+  text-align: center; }
+
+@media screen and (min-width: 400px) {
+  .entry--header {
+    text-align: left;
+    width: auto; } }
 
 .entry--link {
   display: inline-block;
@@ -415,20 +424,12 @@ nav {
 
 @media screen and (min-width: 768px) {
   .last-articles {
-    width: 65%; } }
-
-@media screen and (min-width: 850px) {
-  .last-articles {
     width: 70%; } }
 
 .last-articles h2 {
   text-transform: uppercase; }
 
 @media screen and (min-width: 768px) {
-  .aside {
-    width: 30%; } }
-
-@media screen and (min-width: 850px) {
   .aside {
     width: 25%; } }
 
@@ -466,15 +467,27 @@ nav {
 
 .login--box {
   box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
-  width: 90%;
   margin: 1rem auto 0;
-  padding: 1em;
+  padding: 0.5em;
   font-family: "TrebuchetMS"; }
+
+@media screen and (min-width: 1150px) {
+  .login--box {
+    width: 90%; } }
+
+@media screen and (min-width: 900px) {
+  .login--box {
+    padding: 0.75em; } }
+
+@media screen and (min-width: 1000px) {
+  .login--box {
+    padding: 1em; } }
 
 .login--link {
   margin-top: 0.5rem;
   font-size: 0.85em;
-  display: block; }
+  display: block;
+  text-align: center; }
 
 .login--link:first-of-type {
   margin-top: 1rem; }
@@ -484,13 +497,19 @@ nav {
 
 .social--icons {
   box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
-  width: 90%;
   margin: 1rem auto 0;
   padding: 1em; }
 
+@media screen and (min-width: 1150px) {
+  .social--icons {
+    width: 90%; } }
+
 .social--icons span {
-  display: block;
   font-size: 2.5em; }
+
+@media screen and (min-width: 768px) {
+  .social--icons span {
+    display: block; } }
 
 .social--icons span:hover + p {
   color: #000;
@@ -498,7 +517,12 @@ nav {
   opacity: 1; }
 
 .social--icon {
-  display: flex; }
+  text-align: center; }
+
+@media screen and (min-width: 950px) {
+  .social--icon {
+    text-align: left;
+    display: flex; } }
 
 .social--icon:not(:first-child) {
   margin-top: 1rem; }
@@ -517,10 +541,14 @@ nav {
   color: #8d8d8d;
   transition: all 0.3s;
   padding: 0.25em 0.85em;
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
+
+@media screen and (min-width: 950px) {
+  .social--label {
+    display: inline; } }
 
 .find--form {
-  width: 85%;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -530,6 +558,10 @@ nav {
   border-radius: 5px;
   box-shadow: 1px 1px 4px #ccc inset;
   overflow: hidden; }
+
+@media screen and (min-width: 1150px) {
+  .find--form {
+    width: 85%; } }
 
 .find--form input {
   width: var(--input-width);
@@ -611,13 +643,25 @@ nav {
 .featuring--box {
   box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
   margin: 1rem auto 0;
-  padding: 1em;
+  padding: 1em 0.35em;
   font-family: "TrebuchetMS"; }
 
 .featuring--box h5 {
   text-align: center;
   line-height: 2.5;
-  font-size: 1.15em; }
+  font-size: 1.25em; }
+
+@media screen and (min-width: 768px) {
+  .featuring--box h5 {
+    font-size: 0.8em; } }
+
+@media screen and (min-width: 850px) {
+  .featuring--box h5 {
+    font-size: 0.9em; } }
+
+@media screen and (min-width: 950px) {
+  .featuring--box h5 {
+    font-size: 1em; } }
 
 /*  FIN Aside */
 /* BOTÓN DE IR AL BLOG */

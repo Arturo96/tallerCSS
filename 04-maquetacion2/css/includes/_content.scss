@@ -42,8 +42,10 @@
 	font-family: "TrebuchetMS";
 
 	&--title {
+		display: block;
 		color: var(--color-card);
 		font-size: 1.5em;
+		margin-top: 1.5rem;
 	}
 
 	&--content {
@@ -60,6 +62,12 @@
 		padding: 0.5em;
 		border-radius: 0 0 0 2px;
 		font-size: 0.85em;
+		width: 100%;
+		text-align: center;
+		@include from(400px) {
+			text-align: left;
+			width: auto;
+		}
 	}
 
 	&--link {
@@ -74,10 +82,13 @@
 }
 
 .last-articles {
+	// @include from(768px) {
+	// 	width: 65%;
+	// }
+	// @include from(850px) {
+	// 	width: 70%;
+	// }
 	@include from(768px) {
-		width: 65%;
-	}
-	@include from(850px) {
 		width: 70%;
 	}
 	h2 {
@@ -87,10 +98,13 @@
 }
 
 .aside {
+	// @include from(768px) {
+	// 	width: 30%;
+	// }
+	// @include from(850px) {
+	// 	width: 25%;
+	// }
 	@include from(768px) {
-		width: 30%;
-	}
-	@include from(850px) {
 		width: 25%;
 	}
 
@@ -133,9 +147,18 @@
 
 .login--box {
 	box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
-	width: 90%;
+	@include from(1150px) {
+		width: 90%;
+	}
 	margin: 1rem auto 0;
-	padding: 1em;
+	padding: 0.5em;
+
+	@include from(900px) {
+		padding: 0.75em;
+	}
+	@include from(1000px) {
+		padding: 1em;
+	}
 	font-family: "TrebuchetMS";
 }
 
@@ -143,6 +166,7 @@
 	margin-top: 0.5rem;
 	font-size: 0.85em;
 	display: block;
+	text-align: center;
 
 	&:first-of-type {
 		margin-top: 1rem;
@@ -155,12 +179,16 @@
 
 .social--icons {
 	box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
-	width: 90%;
+	@include from(1150px) {
+		width: 90%;
+	}
 	margin: 1rem auto 0;
 	padding: 1em;
 
 	span {
-		display: block;
+		@include from(768px) {
+			display: block;
+		}
 		font-size: 2.5em;
 
 		&:hover + p {
@@ -172,7 +200,11 @@
 }
 
 .social--icon {
-	display: flex;
+	text-align: center;
+	@include from(950px) {
+		text-align: left;
+		display: flex;
+	}
 
 	&:not(:first-child) {
 		margin-top: 1rem;
@@ -194,10 +226,17 @@
 	transition: all 0.3s;
 	padding: 0.25em 0.85em;
 	opacity: 0;
+	display: none;
+
+	@include from(950px) {
+		display: inline;
+	}
 }
 
 .find--form {
-	width: 85%;
+	@include from(1150px) {
+		width: 85%;
+	}
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #fff;
@@ -308,13 +347,22 @@
 .featuring--box {
 	box-shadow: 3px 5px 5px #ccc, -3px 0 5px #ccc;
 	margin: 1rem auto 0;
-	padding: 1em;
+	padding: 1em 0.35em;
 	font-family: "TrebuchetMS";
 
 	h5 {
 		text-align: center;
 		line-height: 2.5;
-		font-size: 1.15em;
+		font-size: 1.25em;
+		@include from(768px) {
+			font-size: 0.8em;
+		}
+		@include from(850px) {
+			font-size: 0.9em;
+		}
+		@include from(950px) {
+			font-size: 1em;
+		}
 	}
 }
 
