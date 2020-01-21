@@ -10,6 +10,10 @@
 	}
 }
 
+/*Tamaño responsive */
+
+$medium: 525px;
+
 :root {
 	--height-header: 4.375rem;
 	--bg-logo: #f2cb05;
@@ -32,6 +36,8 @@
 
 	/* Font size */
 
+	/* Banner */
+
 	--size-banner: 1em;
 
 	@include from(400px) {
@@ -44,5 +50,45 @@
 
 	@include from(768px) {
 		--size-banner: 2em;
+	}
+
+	/* Títulos del Footer */
+
+	--size-h2-footer: 2em;
+
+	@include from($medium) {
+		--size-h2-footer: 1.75em;
+	}
+
+	@include from(570px) {
+		--size-h2-footer: 2em;
+	}
+
+	@include from(1050px) {
+		--size-h2-footer: 2.5em;
+	}
+
+	/* Títulos del Menú del Footer */
+
+	--size-li-footer: 1.25em;
+
+	@include from($medium) {
+		--size-li-footer: 1.5em;
+	}
+
+	/* Width */
+
+	--width-icon-footer: 50px;
+
+	@include from($medium) {
+		--width-icon-footer: 35px;
+	}
+
+	@include from(600px) {
+		--width-icon-footer: 40px;
+	}
+
+	@include from(675px) {
+		--width-icon-footer: 45px;
 	}
 }
