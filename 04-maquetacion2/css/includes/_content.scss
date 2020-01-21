@@ -2,11 +2,13 @@
 
 .content {
 	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
 
 	@include from(768px) {
-		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
-		margin-top: 6rem;
+		margin-top: 4rem;
 	}
 
 	h2,
@@ -49,7 +51,6 @@
 	}
 
 	&--content {
-		// text-align: justify;
 		margin-top: 1rem;
 	}
 
@@ -82,13 +83,9 @@
 }
 
 .last-articles {
-	// @include from(768px) {
-	// 	width: 65%;
-	// }
-	// @include from(850px) {
-	// 	width: 70%;
-	// }
+	margin-top: 2.5rem;
 	@include from(768px) {
+		margin-top: 0;
 		width: 70%;
 	}
 	h2 {
@@ -98,13 +95,9 @@
 }
 
 .aside {
-	// @include from(768px) {
-	// 	width: 30%;
-	// }
-	// @include from(850px) {
-	// 	width: 25%;
-	// }
+	order: -1;
 	@include from(768px) {
+		order: 0;
 		width: 25%;
 	}
 
@@ -142,7 +135,13 @@
 }
 
 .login--form {
-	margin-top: 0;
+	margin: 1rem auto;
+	@include from(600px) {
+		width: 80%;
+	}
+	@include from(768px) {
+		width: 100%;
+	}
 }
 
 .login--box {
@@ -184,6 +183,11 @@
 	}
 	margin: 1rem auto 0;
 	padding: 1em;
+	display: flex;
+	justify-content: space-evenly;
+	@include from(768px) {
+		display: block;
+	}
 
 	span {
 		@include from(768px) {
@@ -207,7 +211,9 @@
 	}
 
 	&:not(:first-child) {
-		margin-top: 1rem;
+		@include from(768px) {
+			margin-top: 1rem;
+		}
 	}
 }
 
@@ -281,6 +287,10 @@
 	display: flex;
 	overflow: hidden;
 
+	@include from(768px) {
+		width: auto;
+	}
+
 	&:focus-within {
 		box-shadow: 1px 1px 1px blue, -1px -1px 1px blue;
 	}
@@ -325,6 +335,13 @@
 
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.limpiar {
+		display: none;
+		@include from(768px) {
+			display: block;
+		}
 	}
 }
 
