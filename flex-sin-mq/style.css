@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* Generar número aleatorio con una minima cantidad
+
+$rand: $min + floor(random() * ($max - $min + 1)); 
+
+*/
+/* Generar número aleatorio con una cantidad entre 1 y 255
+
+$rand: random(255) ; 
+
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flex-item {
+  border: thin solid #ccc;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 0.5em;
+  text-align: center;
+  flex: 1 1 150px; }
+  .flex-item:nth-child(1) {
+    background-color: #415647;
+    color: #bea9b8; }
+  .flex-item:nth-child(2) {
+    background-color: #13acaf;
+    color: #ec5350; }
+  .flex-item:nth-child(3) {
+    background-color: #43bb9f;
+    color: #bc4460; }
+  .flex-item:nth-child(4) {
+    background-color: #93d039;
+    color: #6c2fc6; }
+  .flex-item:nth-child(5) {
+    background-color: #059970;
+    color: #fa668f; }
+  .flex-item:nth-child(6) {
+    background-color: #848c9c;
+    color: #7b7363; }
+  .flex-item:nth-child(7) {
+    background-color: #989aad;
+    color: #676552; }
+  .flex-item:nth-child(8) {
+    background-color: #3e2518;
+    color: #c1dae7; }
+  .flex-item:nth-child(9) {
+    background-color: #cd9d74;
+    color: #32628b; }
+  .flex-item:nth-child(10) {
+    background-color: #5fef69;
+    color: #a01096; }
+  .flex-item:nth-child(11) {
+    background-color: #338e3b;
+    color: #cc71c4; }
+  .flex-item:nth-child(12) {
+    background-color: #a2718c;
+    color: #5d8e73; }
+  .flex-item:nth-child(13) {
+    background-color: #7238f3;
+    color: #8dc70c; }
+  .flex-item:nth-child(14) {
+    background-color: #4112f7;
+    color: #beed08; }
+  .flex-item:nth-child(15) {
+    background-color: #6395d0;
+    color: #9c6a2f; }
+  .flex-item:nth-child(16) {
+    background-color: #bcd501;
+    color: #432afe; }
+  .flex-item:nth-child(17) {
+    background-color: #a5def3;
+    color: #5a210c; }
+  .flex-item:nth-child(18) {
+    background-color: #52f51b;
+    color: #ad0ae4; }
+  .flex-item:nth-child(19) {
+    background-color: #d24b71;
+    color: #2db48e; }
+  .flex-item:nth-child(20) {
+    background-color: #f671cf;
+    color: #098e30; }
