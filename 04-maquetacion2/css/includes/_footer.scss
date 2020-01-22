@@ -91,14 +91,24 @@ footer {
 	}
 }
 
+a.html5--link {
+	flex-basis: 85% !important;
+}
+
 .image {
 	margin-top: 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 
+	a {
+		flex: 0 1 15%;
+	}
+
 	img {
-		width: var(--width-icon-footer);
+		width: 100%;
+		// width: var(--width-icon-footer);
+		// flex: 0 0 30px;
 	}
 
 	.html5 {

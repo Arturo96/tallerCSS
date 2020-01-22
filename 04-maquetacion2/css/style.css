@@ -853,14 +853,20 @@ footer {
     width: 30%;
     order: 0; } }
 
+a.html5--link {
+  flex-basis: 85% !important; }
+
 .image {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
 
+.image a {
+  flex: 0 1 15%; }
+
 .image img {
-  width: var(--width-icon-footer); }
+  width: 100%; }
 
 .image .html5 {
   width: 100%; }
