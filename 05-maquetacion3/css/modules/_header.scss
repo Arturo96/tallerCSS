@@ -1,19 +1,21 @@
 .header {
-	@media screen and (min-width: 768px) {
+	height: 15rem;
+	@media screen and (min-width: $medium) {
+		height: 8rem;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
-		padding: 2em;
+		padding: 0 2em;
 	}
 
 	border-bottom: 1px solid #f1f1f1;
 }
 
 .logo {
-	width: 100%;
 	text-align: center;
 	padding: 1em;
-	@media screen and (min-width: 768px) {
-		padding: initial;
+	@media screen and (min-width: $medium) {
+		padding: 0;
 		text-align: initial;
 		width: 25%;
 	}
@@ -22,9 +24,14 @@
 		font-style: italic;
 	}
 }
+.menu-nav {
+	@media screen and (min-width: $medium) {
+		height: 3rem;
+	}
+}
 
 .menu {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $medium) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -34,20 +41,24 @@
 	list-style: none;
 
 	&--item {
-		text-align: center;
-		padding: 0.5em 0;
+		height: 100%;
+	}
 
-		&:last-child {
-			padding-bottom: 1em;
+	&--link {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.5em 0;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: #ccc;
+			color: #fff;
 		}
 
-		@media screen and (min-width: 768px) {
-			padding: initial;
-			padding-right: 1.5em;
-
-			&:last-child {
-				padding-bottom: initial;
-			}
+		@media screen and (min-width: $medium) {
+			padding: 0 1.5em;
 		}
 	}
 }
