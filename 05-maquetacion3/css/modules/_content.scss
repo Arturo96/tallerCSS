@@ -1,0 +1,66 @@
+main {
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: $medium) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+aside {
+	@media screen and (min-width: $medium) {
+		flex-basis: 25%;
+	}
+
+	h2 {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	a {
+		text-align: center;
+		display: block;
+		background-color: #ccc;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 1rem;
+		padding: 1em 0;
+	}
+}
+
+.galeria {
+	@media screen and (min-width: $medium) {
+		flex-basis: 73%;
+	}
+	display: flex;
+	justify-content: center;
+	@media screen and (min-width: $medium) {
+		justify-content: space-between;
+	}
+	flex-wrap: wrap;
+	padding-top: 1rem;
+}
+
+.card {
+	margin-top: 1.5rem;
+	margin-right: 1rem;
+	box-shadow: 1px 1px 0 #ccc, -1px -1px 0 #ccc;
+	flex: 0 0 45%;
+	@media screen and (min-width: $medium) {
+		flex: 0 0 23%;
+	}
+
+	img {
+		width: 250px;
+	}
+
+	&--footer {
+		padding: 1rem;
+	}
+
+	&--web {
+		color: #ccc;
+	}
+}
