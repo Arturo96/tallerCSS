@@ -35,7 +35,7 @@ aside {
 		flex-basis: 73%;
 	}
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	@media screen and (min-width: $medium) {
 		justify-content: space-between;
 	}
@@ -45,19 +45,30 @@ aside {
 
 .card {
 	margin-top: 1.5rem;
-	margin-right: 1rem;
 	box-shadow: 1px 1px 0 #ccc, -1px -1px 0 #ccc;
-	flex: 0 0 45%;
+	flex: 0 0 30%;
 	@media screen and (min-width: $medium) {
 		flex: 0 0 23%;
 	}
 
 	img {
-		width: 250px;
+		width: 100%;
+		min-width: 225px;
+		@media screen and (min-width: $medium) {
+			min-width: 200px;
+		}
 	}
 
 	&--footer {
 		padding: 1rem;
+	}
+
+	&--name {
+		transition: all 0.3s;
+
+		&:hover {
+			color: green;
+		}
 	}
 
 	&--web {

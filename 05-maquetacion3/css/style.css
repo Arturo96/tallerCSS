@@ -18,6 +18,10 @@ a {
   text-decoration: none;
   color: #000; }
 
+.container {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem; }
+
 .header {
   height: 15rem;
   border-bottom: 1px solid #f1f1f1; }
@@ -106,7 +110,7 @@ aside a {
 
 .galeria {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 1rem; }
 
@@ -120,19 +124,59 @@ aside a {
 
 .card {
   margin-top: 1.5rem;
-  margin-right: 1rem;
   box-shadow: 1px 1px 0 #ccc, -1px -1px 0 #ccc;
-  flex: 0 0 45%; }
+  flex: 0 0 30%; }
 
 @media screen and (min-width: 875px) {
   .card {
     flex: 0 0 23%; } }
 
 .card img {
-  width: 250px; }
+  width: 100%;
+  min-width: 225px; }
+
+@media screen and (min-width: 875px) {
+  .card img {
+    min-width: 200px; } }
 
 .card--footer {
   padding: 1rem; }
 
+.card--name {
+  transition: all 0.3s; }
+
+.card--name:hover {
+  color: green; }
+
 .card--web {
   color: #ccc; }
+
+footer {
+  padding: 2em; }
+
+@media screen and (min-width: 875px) {
+  footer {
+    display: flex;
+    justify-content: space-between; } }
+
+.footer-p {
+  text-align: center; }
+
+@media screen and (min-width: 875px) {
+  .footer-p {
+    text-align: left; } }
+
+.footer-p:first-child {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  color: gray; }
+
+.footer-p:last-child {
+  font-size: 1.25em;
+  margin-top: 1rem; }
+
+@media screen and (min-width: 875px) {
+  .footer-p:last-child {
+    align-self: flex-end;
+    margin-top: initial; } }
