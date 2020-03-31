@@ -109,18 +109,18 @@ aside a {
   padding: 1em 0; }
 
 .galeria {
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 1rem; }
+
+@media screen and (min-width: 540px) {
+  .galeria {
+    justify-content: space-between; } }
 
 @media screen and (min-width: 875px) {
   .galeria {
     flex-basis: 73%; } }
-
-@media screen and (min-width: 875px) {
-  .galeria {
-    justify-content: space-between; } }
 
 .card {
   margin-top: 1.5rem;
