@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+nav a {
+  transition: all 0.3s; }
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.caja {
+  background-color: green;
+  height: 100px;
+  margin-right: 1rem;
+  margin-top: 1rem; }
+  .caja:last-child {
+    margin-right: 0; }
+
+.content {
+  padding: 1.5rem 3rem; }
+
+footer {
+  flex-grow: 1;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer p {
+    margin: 0; }
