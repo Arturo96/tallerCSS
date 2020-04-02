@@ -1,0 +1,74 @@
+.header {
+	height: 8rem;
+	@media screen and (min-width: $medium) {
+		padding: 0 2em;
+		border-bottom: 1px solid #f1f1f1;
+
+		// Flexbox
+
+		// display: flex;
+		// align-items: center;
+		// justify-content: space-between;
+
+		// Grid
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+	}
+}
+
+.logo {
+	text-align: center;
+	padding: 1em;
+	@media screen and (min-width: $medium) {
+		padding: 0;
+		text-align: initial;
+	}
+
+	h1 {
+		font-style: italic;
+	}
+}
+.menu-nav {
+	@media screen and (min-width: $medium) {
+		height: 3rem;
+	}
+}
+
+.menu {
+	list-style: none;
+	@media screen and (min-width: $medium) {
+		height: 100%;
+
+		// Flexbox
+		// display: flex;
+		// align-items: center;
+
+		// Grid
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	&--item {
+		// flex: auto;
+		height: 100%;
+	}
+
+	&--link {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: #ccc;
+			color: #fff;
+		}
+
+		@media screen and (min-width: $medium) {
+			padding: 0 1.5em;
+		}
+	}
+}

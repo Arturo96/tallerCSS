@@ -1,0 +1,82 @@
+main {
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: $medium) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+aside {
+	@media screen and (min-width: $medium) {
+		flex-basis: 25%;
+	}
+
+	h2 {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	a {
+		text-align: center;
+		display: block;
+		background-color: #ccc;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 1rem;
+		padding: 1em 0;
+	}
+}
+
+.galeria {
+	padding-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1rem;
+
+	@media screen and (min-width: $medium) {
+		flex-basis: 73%;
+	}
+
+	// display: flex;
+	// justify-content: center;
+	// flex-wrap: wrap;
+	// @media screen and (min-width: 575px) {
+	// 	justify-content: space-between;
+	// }
+}
+
+.card {
+	// margin-top: 1.5rem;
+	box-shadow: 1px 1px 0 #ccc, -1px -1px 0 #ccc;
+	// flex: 0 0 30%;
+	@media screen and (min-width: $medium) {
+		// flex: 0 0 23%;
+	}
+
+	img {
+		width: 100%;
+		// min-width: 225px;
+		// @media screen and (min-width: $medium) {
+		// 	min-width: 200px;
+		// }
+	}
+
+	&--footer {
+		padding: 1rem;
+	}
+
+	&--name {
+		transition: all 0.3s;
+
+		&:hover {
+			color: green;
+		}
+	}
+
+	&--web {
+		color: #ccc;
+	}
+}
