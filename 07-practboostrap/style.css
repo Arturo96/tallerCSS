@@ -5,16 +5,18 @@ body {
 
 nav a {
   transition: all 0.3s; }
-  nav a:hover {
-    background-color: rgba(0, 0, 0, 0.8); }
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .caja {
   background-color: green;
   height: 100px;
   margin-right: 1rem;
   margin-top: 1rem; }
-  .caja:last-child {
-    margin-right: 0; }
+
+.caja:last-child {
+  margin-right: 0; }
 
 .content {
   padding: 1.5rem 3rem; }
@@ -25,5 +27,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  footer p {
-    margin: 0; }
+
+footer p {
+  margin: 0; }
+
+.galeria {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px; }
