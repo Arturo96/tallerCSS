@@ -1,0 +1,63 @@
+@mixin centrarContenido() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --t-bg: #000;
+    --triangle-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include centrarContenido();
+    min-height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.container {
+    position: relative;
+    
+    &:hover .tooltip {
+        opacity: 1;
+        top: -40px;
+    }
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.25s;
+}
+
+.content {
+    background-color: var(--t-bg);
+    color: #fff;
+    text-align: center;
+    font-size: .75em;
+    border-radius: 5px;
+    padding: .5em;
+    white-space: nowrap;
+}
+
+.triangle {
+    position: absolute;
+    right: 45%;
+    bottom: -7px;
+    background-color: var(--t-bg);
+    width: var(--triangle-size);
+    height: var(--triangle-size);
+    transform: rotate(45deg);
+}
+
